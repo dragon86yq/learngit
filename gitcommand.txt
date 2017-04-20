@@ -1,4 +1,4 @@
-// 自报家门
+﻿// 自报家门
 //--global 参数，表示这台机器上的所有git仓库都是用这个配置
 git config --global user.name ""
 git config --global user.email ""
@@ -51,3 +51,6 @@ git push -u origin master
 
 //clone 仓库
 git clone https://github.com/findingsea/myRepoForBlog.git
+
+//出现fast-forwards 时需要先pull然后在push
+
