@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿// 自报家门
+=======
+// 自报家门
+>>>>>>> cad1f64e3fa0651f721d19f5235ba2a0aa5cfbc7
 //--global 参数，表示这台机器上的所有git仓库都是用这个配置
 git config --global user.name ""
 git config --global user.email ""
@@ -42,15 +46,24 @@ git commit -m "remove test.txt"
 ssh-keygen -t rsa -C "dragon86yq@gmail.com"
 
 //将本地仓库推送到GitHub仓库
+<<<<<<< HEAD
 git remote add origin https://github.com/dragon86yq/learngit.git
 
 //删除远程库
 git remote rm origin
+=======
+git remote add origin git@github.com:dragon86yq/learngit.git
+//删除远程仓库
+git remote rm origin
+//如果创建仓库时，选择了readme，则需要先pull
+git pull origin master
+>>>>>>> cad1f64e3fa0651f721d19f5235ba2a0aa5cfbc7
 
 //本地库所有内容推送到远程库上
 //-u Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
 git push -u origin master
 
+<<<<<<< HEAD
 
 //clone 仓库
 git clone https://github.com/findingsea/myRepoForBlog.git
@@ -60,3 +73,13 @@ git clone https://github.com/findingsea/myRepoForBlog.git
 
 //
  git pull origin master
+=======
+//clone 仓库
+git clone https://github.com/findingsea/myRepoForBlog.git
+
+//首先先链接下远程的git库
+git remote add origin git@github.com:hevily/hevily
+
+
+
+>>>>>>> cad1f64e3fa0651f721d19f5235ba2a0aa5cfbc7
